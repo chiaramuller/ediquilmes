@@ -1,0 +1,31 @@
+seo:
+  site_name: Join Sustainable Change
+  title: Default SEO Title 
+  description: 
+  keywords:
+  social_image:
+  author:
+  favicon_image:
+social:  
+  instagram_username: 
+  facebook_url:
+  twitter_username:
+design:  
+  brand-1_color: 'teal'
+  brand-2_color: 'teal'
+  brand-3_color: 'teal'
+  brand-4-color: 'teal'
+  grey-dark_color: 'rgb(60,60,60)'
+default: 
+  banner-main_bg_image: /images/location-above.jpg
+  banner-skewed_bg_image: /images/program-cards.jpg
+instagram-feed: 
+ - /images/insta3.jpg
+ - /images/insta1.jpg
+ - /images/insta5.jpg
+ - /images/insta4.jpg
+ - /images/program-cards.jpg
+ - /images/insta2.jpg
+
+
+ 

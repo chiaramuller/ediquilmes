@@ -1,0 +1,380 @@
+/*
+Font Families:
+    font-family: 'Montserrat', sans-serif; font-weight: 300;
+    font-family: 'Playfair Display', serif;
+*/
+
+/* Temporary styles
+section,
+div{
+    border: 1px solid red;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img { max-width: 100%; }
+
+[class*=grid] {
+    margin:0;
+}
+[class*=col-], [class*=col_], [class~=col]{
+    padding:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Utility Classes */
+.tall-30 { min-height: 30vh; }
+.tall-40 { min-height: 40vh; }
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+.padded    { padding: 5%;    }
+.grid .padded{ padding: 5%;   }
+.padded-1  { padding: 1rem;  }
+.padded-2  { padding: 2rem;  }
+.padded-10 { padding: 10%;   }
+
+.padded-t  { padding-top: 5%;    }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%;   }
+.padded-r  { padding-right: 5%;  }
+
+.padded-t-10 { padding-top: 10%; }
+.padded-h    { padding-left: 70px;}
+
+.padded-0 { padding: 0; }
+.padded-t-0 {padding-top: 0;}
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.button.margin-0 { margin:0; }
+.margin-b-05 { margin-bottom: 0.5rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-t-2 { margin-top: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.bg-featured   { background-color: var(--brand-1); }
+.bg-featured-2 { background-color: #BBE5F1; }
+.bg-featured-3 { background-color: #3E442B; }
+.bg-featured-4 { background-color: var(--JS-green); }
+
+
+.light-text { color: white } 
+.bold-text{ font-weight: 600;}
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+.capped-width{
+    max-width: 1000px;
+    margin: auto;
+}
+.capped-width-narrow{
+    max-width: 900px;
+    margin: auto;
+}
+
+.flex-flip-alternate:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+li{
+    margin-left: 1rem;
+    padding-left: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.hidden{ display: none; }
+
+.inline{ display: inline-block; }
+
+.parent{ position: relative;}
+.child { position: absolute;}
+
+/*Typography Styles*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #3E442B;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.02em;
+    color: var(--brand-3);
+    text-transform: uppercase; 
+    letter-spacing: 0.04em;;
+}
+h1{
+    font-size: 5rem;
+}
+
+h1, h2{
+    margin-bottom: 2rem;
+}
+
+h2{ font-size: 2rem;}
+
+h3{ 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+p:last-child{
+    margin-bottom: 0;
+}
+
+p.margin-b-2{
+    margin-bottom: 2rem;
+}
+
+a{    
+    color: inherit;
+    text-decoration: none;   
+}
+
+a:hover{ 
+    /*color: #a2745c;*/
+    color: var(--JS-beige-dark) }
+
+.handwritten{ font-family: 'Permanent Marker';}
+.white-text, 
+h2 .white-text {color: white;}
+
+.button{
+    text-decoration: none;
+    font-weight: 400;
+    background-color: var(--brand-2);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color:white; 
+    display: inline-block;
+    padding: 1rem 2rem;
+    min-width: 250px;
+    border: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+.big-text{
+    font-size: 5rem;
+}
+.subtle{
+    opacity: 0.8;
+    font-size: 0.75rem;
+}
+
+.bg-image{
+    background-color: rgb(150,150,150);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+.bg-overlay::after {
+    z-index: 1;
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  
+  .bg-overlay > * {
+    z-index: 2;
+    position: relative;
+  }
+  /* Add a second class to change the color or style  */
+  
+  .bg-overlay-gradient::after { 
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+  } 
+  
+  .bg-overlay-featured::after { 
+    background-color: var(--featured);
+    opacity: 0.5;
+  } 
+  
+  /* Aspect Ratios with percentage unit are only effective if the element (the <div>) is inside a parent container or column, it can't be applied to the column itself. */
+  
+  a.bg-image { display: block;}
+  
+  .landscape     { padding-bottom: 66% ; }
+  .landscape-wide { padding-bottom: 50%; }
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait      { padding-bottom: 125%; }
+  .square        { padding-bottom: 100%; }
+  .round         {     
+      border-top-left-radius: 20rem;
+      border-top-right-radius: 20rem;}
+  
+  
+  /* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
+
+
+/*---------------- Header & Footer ---------------*/
+header{
+    padding: 1% 1%;
+}
+.logo {
+    font-size: 2rem;
+}
+.hamburger-button,
+.close-button{
+    position: fixed;
+    right: 1%;
+    top: 2%;
+    z-index: 2;
+    max-width: 30px;
+    transition: all 0.5s ease;
+}
+.hamburger-button.active,
+.close-button.active{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.nav-container{
+    display: none;
+    z-index: 3;
+    top:0;
+    bottom:0;
+    right: 0;
+    width: 300px;
+    text-align: right;
+    background-color: var(--brand-1);
+    position:fixed;
+}
+.nav-menu{
+    margin-top: 100px;
+}
+nav a{ padding: 0 2rem;}
+.nav-menu a{
+    display: block;
+    padding: 5%;
+    top: 50%;
+
+}
+.close-button.active{
+    display: block;
+    display: fixed;
+    width: 30px;
+    z-index: 3;   
+    top: 1%;
+    right: 1%;
+}
+
+footer{
+    background-color: var(--brand-1);
+}
+
+
+/*--------------- Sections -------------*/
+
+/*------USPs--------*/  
+.vertical-line{
+    left: 50%;
+    bottom: -50px;
+    color: var(--brand-2);
+} 
+
+.usp-text{
+    margin-top: 70px;
+}
+
+/* .testimonial-image{
+    margin: auto;
+} */
+
+.test{
+    height: 90vh;
+    width: 50%;
+    border: 2px solid var(--brand-2);
+    position: absolute;
+    z-index: -1;
+    margin-top: -30rem;
+    margin-bottom: -20rem;
+    margin-left: 25rem;
+    margin-right: -7rem;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+}
+.test-2{
+    height: 40vh;
+width: 30%;
+border: 2px solid var(--brand-2);
+position: absolute;
+z-index: 1;
+margin-bottom: -14rem;
+margin-left: 80rem;
+margin-right: -7rem;
+object-fit: cover;
+object-position: center;
+position: relative;
+margin-top: -94px;
+}
+
+.motivational-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+
+/*---------------Responsive Design----------*/
+.tab-show{
+    display:none;
+}
+
+
+
+@media (max-width: 1024px) {
+
+	/* - Styles added here will apply at devices smaller than 1024px */ 
+    .tab-show{ display: block; }
+    .tab-hide{ display: none;}
+
+}
