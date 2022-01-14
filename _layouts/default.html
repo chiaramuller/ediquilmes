@@ -8,9 +8,14 @@
     <body>
 
         {% include inline-styles.html %}
+        {% include header-nav.html %}
         
         {{content}}
-        
+
+        {% include map.html %}
+        {% include footer.html %}
+
+
         <!-- JQuery  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         

@@ -24,5 +24,15 @@ $('.slider-container').slick({
 	pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
 });
 
+$('.slider-container-2').slick({
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	centerMode: true,
+	variableWidth: true
+});
+	   
+
 //Animate on scroll;
 AOS.init();
