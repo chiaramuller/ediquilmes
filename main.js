@@ -1,14 +1,4 @@
-$(".hamburger-button").click(function(){
-    $(".nav-container").slideToggle();
-    $(this).toggleClass("active");
-    $('.close-button').toggleClass('active');
-});
 
-$(".close-button").click(function(){
-    $(".nav-container").slideToggle();
-    $(this).toggleClass("active");
-    $('.hamburger-button').toggleClass('active');
-});
 
 //code for slick slider; testimonial section 
 $('.slider-container').slick({
@@ -32,7 +22,29 @@ $('.slider-container-2').slick({
 	centerMode: true,
 	variableWidth: true
 });
+
+$('.slider-container-3').slick({
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	centerMode: true,
+	variableWidth: true
+  });
+
 	   
 
 //Animate on scroll;
 AOS.init();
+
+$(".hamburger-button").click(function(){
+    $(".nav-container").slideToggle();
+    $(this).toggleClass("active");
+    $('.close-button').toggleClass('active');
+});
+
+$(".close-button").click(function(){
+    $(".nav-container").slideToggle();
+    $(this).toggleClass("active");
+    $('.hamburger-button').toggleClass('active');
+});

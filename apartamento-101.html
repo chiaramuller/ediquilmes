@@ -1,0 +1,85 @@
+---
+layout: default
+apartment-images:
+ - 1
+ - 2
+ - 3
+ - 4
+---
+
+<section class="padded-l padded-t">
+    <div class="slider-container-3 tall-70 grid">
+        {% for item in page.apartment-images %}
+            <div class="margin-r-2">
+                <div class="bg-image portrait" style="background-image: url('/images/apartamento.JPEG');"></div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
+<section class="padded">
+    <h1>Apartamento 101</h1>
+    <h2>a partir de 300 Reales / Noche </h2>
+    <div class="grid">
+        <div class="col-4">
+            <ul>
+                <li>Para 2 Personas</li>
+                <li>1 Habitación</li>
+                <li>Opcional hay espacio para 2 criaturas </li>
+            </ul>
+
+        </div>
+        <div class="col-4">
+            <ul>
+                <li><i class="fas fa-wifi"></i>Wifi</li>
+                <li><i class="far fa-snowflake"></i>Aire Acondicionado</li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <ul>
+                <li><i class="far fa-snowflake"></i>1 cama matrimonial + 1 sillon cama</li>
+                <li><i class="fas fa-tint"></i>Lavaropas</li>
+                <li><i class="fas fa-sink"></i>Cocina equipada</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="grid">
+    <div class="col-3"></div>
+    <div class="col-9 grid">
+        <div class="slider-container-4">
+            {% for item in apartment-images-2 %}
+                
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="padded">
+    <div class="capped-width grid">
+        <h2>Conocer los otros apartamentos</h2>
+
+        <div class="col-4 padded-1">
+            <div class="bg-featured padded-1">
+                <h4>Apartamento 102</h4>
+                <p>Para 6 personas</p>
+            </div>
+        </div>
+        <div class="col-4 padded-1">
+            <div class="bg-featured padded-1">
+                <h4>Apartamento 201</h4>
+                <p>Para 10 Personas</p>
+            </div>
+        </div>
+        <div class="col-4 padded-1">
+            <div class="bg-featured padded-1">
+                <h4>Apartamento 202</h4>
+                <p>Para 6 Personas</p>
+            </div>
+        </div>
+    </div>
+</section>
