@@ -23,14 +23,17 @@ $('.slider-container-2').slick({
 	variableWidth: true
 });
 
+$(document).ready(function(){
 $('.slider-container-3').slick({
 	dots: true,
+	autoplaySpeed: 1500,
+	autoplay: true,
 	infinite: true,
 	speed: 300,
-	slidesToShow: 1,
+	slidesToShow: 3,
 	centerMode: true,
-	variableWidth: true
   });
+});
 
 	   
 

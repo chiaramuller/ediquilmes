@@ -41,6 +41,7 @@ html {
 
 .padded    { padding: 5%;    }
 .grid .padded{ padding: 5%;   }
+.padded-05 { padding: 0.5rem; }
 .padded-1  { padding: 1rem;  }
 .padded-2  { padding: 2rem;  }
 .padded-10 { padding: 10%;   }
@@ -62,8 +63,10 @@ html {
 .margin-b-05 { margin-bottom: 0.5rem; }
 .margin-b-1 { margin-bottom: 1rem; }
 .margin-b-2 { margin-bottom: 2rem; }
+.margin-t-1 { margin-top: 1rem; }
 .margin-t-2 { margin-top: 2rem; }
 .margin-r-2 { margin-right: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
 
 .bg-featured   { background-color: var(--brand-1); }
 .bg-featured-2 { background-color: #BBE5F1; }
@@ -73,6 +76,7 @@ html {
 
 .light-text { color: white } 
 .bold-text{ font-weight: 600;}
+.featured-text { color: var(--dark-grey); }
 
 .left   { text-align: left; }
 .center { text-align: center; }
@@ -138,7 +142,6 @@ h3{
 
 h4{
     font-size: 1.6rem;
-    margin-bottom: 1.5rem;
 }
 
 p{
@@ -183,6 +186,11 @@ h2 .white-text {color: white;}
     text-align: center;
 }
 
+.link{
+    border-bottom: 1px solid;
+    font-size: 1.2rem;
+}
+
 .icon{
     max-width: 50px;
 }
@@ -190,6 +198,7 @@ h2 .white-text {color: white;}
 
 .big-text{
     font-size: 5rem;
+    color:var(--dark-grey);
 }
 .subtle{
     opacity: 0.8;
@@ -232,6 +241,7 @@ h2 .white-text {color: white;}
   .portrait-tall { padding-bottom: 175%; }
   .portrait      { padding-bottom: 125%; }
   .square        { padding-bottom: 100%; }
+  .special-ratio { padding-bottom: 62.565% }
   .round         {     
       border-top-left-radius: 20rem;
       border-top-right-radius: 20rem;}
@@ -370,9 +380,8 @@ iframe{width: 100%;}
 .down-arrow {
     position: absolute;
     left: 48%;
-    bottom: 1rem;
-/*     top: auto;
- */    width: 1.5rem;
+    bottom: 2rem;
+    width: 2rem;
     z-index: 3;
     font-weight: 700;
     border: none;

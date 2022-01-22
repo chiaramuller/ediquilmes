@@ -11,9 +11,9 @@ social:
   facebook_url:
   twitter_username:
 design:  
-  brand-1_color: 'teal'
-  brand-2_color: 'teal'
-  brand-3_color: 'teal'
+  brand-1_color: ' #A4D8D6'
+  brand-2_color: ' #A4D8D6'
+  brand-3_color: ' #A4D8D6'
   brand-4-color: 'teal'
   grey-dark_color: 'rgb(60,60,60)'
 default: 
