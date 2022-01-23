@@ -373,6 +373,9 @@ margin-top: -94px;
     text-transform: uppercase;
     font-size: 2rem;
 }
+
+
+
 /*--------------Map---------------*/
 iframe{width: 100%;}
 
@@ -394,6 +397,13 @@ iframe{width: 100%;}
 }
 
 
+.slick-initialized .slick-slide {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+.slick-slide{
+    float: none;
+}
 /*---------------Responsive Design----------*/
 .tab-show{
     display:none;
