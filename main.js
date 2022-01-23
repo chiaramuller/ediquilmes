@@ -63,16 +63,15 @@ $('#portfolio-filter span').click(function(){
 	console.log(this);
 
 	//get the name of the category from this span, remove up to two spaces from the text and replace them with dashes, make it lowercase, add replace until eliminated all of the space 
-	var filterVal = $(this).attr(id);
+	var filterVal = $(this).attr('id');
 
 	console.log(filterVal);
 	//each function iterates through each element that matches the selector and applies the function one by one  
    $("#filterable-gallery .gallery-item").each(function(){
 	 
 	 //if the filter value that they have clicked on is "all" then remove the class of hidden from each gallery-item 
-	 if(filterVal=="all"){
+	 if(filterVal=="todas"){
 	   $(this).removeClass("hidden");
-	   console.log("removed class of hidden because set to view all");
 	 }
 	 
 	 else{
