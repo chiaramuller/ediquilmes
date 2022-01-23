@@ -55,9 +55,12 @@ galeria:
 
     <div class="grid-center filterable-gallery" id="filterable-gallery">
       {% for item in page.galeria %}
-        <div class="col-4_sm-6_xs-12 gallery-item {{item.filter}}" >
+<!--       <a class="col-6" href="https://source.unsplash.com/U3aF7hgUSrk">
+        <div class="bg-image square bg-img-1 bg-pos-r"></div>
+      </a> -->
+        <a class="col-4_sm-6_xs-12 gallery-item {{item.filter}}" href="{{item.img_url}}" >
           <div class="bg-image" style="background-image: url('{{item.img_url}}');"></div>
-        </div>
+        </a>
       {% endfor %}
     </div>
     

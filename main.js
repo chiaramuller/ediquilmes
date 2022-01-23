@@ -53,6 +53,13 @@ $(".close-button").click(function(){
 });
 
 //Filter Image Gallery
+//lightgallery
+lightGallery(document.getElementById("filterable-gallery"), {
+	download: false
+	// more functions on https://www.lightgalleryjs.com/docs/settings/
+});
+
+//filter
 $('#portfolio-filter span').click(function(){
   
 	//remove class "active" from any <span> tgat us currently active
