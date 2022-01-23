@@ -401,9 +401,55 @@ iframe{width: 100%;}
     display: inline-block !important;
     vertical-align: middle;
 }
+
 .slick-slide{
     float: none;
 }
+/*------------- Image Gallery ----------------*/
+ /*Responsive Image Utility Classes*/
+  
+  .bg-1{
+    background-image: url("https://source.unsplash.com/AbNO2iejoXA");
+  }
+  .bg-2{
+    background-image: url("https://source.unsplash.com/kd0U9ohhpAs");
+  }
+  .bg-img-3{
+    background-image: url("https://source.unsplash.com/Ntm4C2lCWxQ");
+  }
+  
+  /*Filterable Gallery Styles*/
+.filterable-gallery .bg-image{
+   padding-bottom: 100%;
+}
+
+.filterable-gallery{
+   padding: 1rem;
+}
+  
+.filterable-gallery [class*=col]{
+   padding: 0.1rem;
+}
+  
+.hidden{
+   display: none;
+}
+  
+/*filter navigation*/
+.portfolio-filter span{
+    text-transform: uppercase;
+    padding: 0.2rem;
+}
+  
+.portfolio-filter span:hover {
+    cursor: pointer;
+}
+
+.portfolio-filter .active{
+      border-bottom: 1px solid;
+}
+  
+ 
 /*---------------Responsive Design----------*/
 .tab-show{
     display:none;
