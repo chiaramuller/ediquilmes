@@ -1,75 +1,66 @@
 ---
 layout: default
 apartment-images:
- - 1
- - 2
- - 3
- - 4
+ - img_url: /images/edificio.JPG
+   format: landscape
+ - img_url: /a101/cocina.JPEG
+   format: portrait
+ - img_url: /a101/cama.JPEG
+   format: landscape
+ - img_url: /a101/kaktus.JPEG
+   format: portrait
+ - img_url: /a101/comedor.JPEG
+   format: landscape
+ - img_url: /images/jardin.JPG
+   format: portrait 
+ - img_url: /images/praiagrande.JPEG
+   format: landscape
+ - img_url: /a101/IMG_9460.JPEG
+   format: portrait
+ - img_url: /a101/IMG_9461.JPEG
+   format: landscape
+ - img_url: /a101/IMG_9463.JPEG
+   format: portrait
+ - img_url: /images/prainha.JPEG
+   format: landscape
+ - img_url: /a101/sillón.JPEG
+   format: portrait
 ---
 
 <section class="padded padded-b-0">
     <div class="slider-container-3">
-        <div class="padded-1">
-            <div class="bg-image portrait" style="background-image: url('/images/jardin.JPG');"></div>
-        </div>
-        <div class="padded-1">
-                <div class="bg-image landscape" style="background-image: url('/images/101 (9).JPEG');"></div>
-        </div>
-        <div class="padded-1">
-            <div class="bg-image portrait " style="background-image: url('/images/prainha.JPEG');"></div>
-        </div>
-        <div class="padded-1">
-            <div class="bg-image landscape " style="background-image: url('/images/101 (3).JPEG');"></div>
-        </div>
-        <div class="padded-1">
-            <div class="bg-image portrait" style="background-image: url('/images/101 (12).JPEG');"></div>
-        </div>
-        <div class="padded-1">
-            <div class="bg-image landscape " style="background-image: url('/images/101 (6).JPEG');"></div>
-        </div>
+        {% for item in page.apartment-images %}
+            <div class="padded-1">
+                <div class="bg-image {{item.format}}" style="background-image: url('{{item.img_url}}');"></div>
+            </div> 
+        {% endfor %}
     </div>
 </section>
-<!-- 
-<section class="padded-l margin-l-2 padded-t">
-    <div class=" grid slider-container-3">
-        <div class="col-3">
-            <div class="bg-image portrait margin-r-2" style="background-image: url('/images/101 (9).JPEG');"></div>
-        </div>
-        <div class="col-3-middle">
-            <div class="bg-image landscape margin-r-2" style="background-image: url('/images/101 (3).JPEG');"></div>
-        </div>
-        <div class="col-3">
-            <div class="bg-image portrait margin-r-2" style="background-image: url('/images/101 (12).JPEG');"></div>
-        </div>
-        <div class="col-3-middle">
-            <div class="bg-image landscape " style="background-image: url('/images/101 (6).JPEG');"></div>
-        </div>
-    </div>
-</section> -->
 
 <section class="padded">
     <h1>Apartamento 101</h1>
-    <h2>a partir de 300 Reales / Noche </h2>
-    <div class="grid">
+<!--     <h2>a partir de 300 Reales / Noche </h2>
+ -->    <div class="grid">
         <div class="col-4">
-            <ul>
-                <li>Para 2 Personas</li>
-                <li>1 Habitación</li>
-                <li>Opcional hay espacio para 2 criaturas </li>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="far fa-square"></i></span>1 Habitación</li>
+                <li><span class="fa-li"><i class="fas fa-male"></i><i class="fas fa-female"></i></span></i>Para 2 Personas</li>
+                <li><span class="fa-li"><i class="fas fa-child"></i></span> </i>Opcional hay espacio para 2 criaturas </li>
             </ul>
 
         </div>
         <div class="col-4">
-            <ul>
-                <li><i class="fas fa-wifi"></i>Wifi</li>
-                <li><i class="far fa-snowflake"></i>Aire Acondicionado</li>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-bed"></i></span>1 cama matrimonial + 1 sillón cama</li>
+                <li> <span class="fa-li"><i class="fas fa-wifi"></i></span>Wifi</li>
+                <li> <span class="fa-li"><i class="far fa-snowflake"></i></span></i>Aire Acondicionado</li>
             </ul>
         </div>
         <div class="col-4">
-            <ul>
-                <li><i class="far fa-snowflake"></i>1 cama matrimonial + 1 sillon cama</li>
-                <li><i class="fas fa-tint"></i>Lavaropas</li>
-                <li><i class="fas fa-sink"></i>Cocina equipada</li>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-sink"></i></span>Cocina equipada</li>
+                <li> <span class="fa-li"><i class="fab fa-gripfire"></i></span></i>Parilla</li>
+                <li><span class="fa-li"><i class="fas fa-tint"></i></span></i>Lavaropas</li>
             </ul>
         </div>
     </div>
