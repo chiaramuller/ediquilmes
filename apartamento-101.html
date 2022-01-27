@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: apartamentos
 apartment-images:
  - img_url: /images/edificio.JPG
    format: landscape
@@ -27,15 +27,7 @@ apartment-images:
    format: portrait
 ---
 
-<section class="padded padded-b-0">
-    <div class="slider-container-3">
-        {% for item in page.apartment-images %}
-            <div class="padded-1">
-                <div class="bg-image {{item.format}}" style="background-image: url('{{item.img_url}}');"></div>
-            </div> 
-        {% endfor %}
-    </div>
-</section>
+
 
 <section class="padded">
     <h1>Apartamento 101</h1>
@@ -72,42 +64,24 @@ apartment-images:
 </section>
 
 
-<section class="grid">
-    <div class="col-3"></div>
-    <div class="col-9 grid">
-        <div class="slider-container-4">
-            {% for item in apartment-images-2 %}
-                
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
 <section class="padded">
     <div class="capped-width grid-center">
         <h2>Conocer los otros apartamentos</h2>
 
-        <div class="col-4 padded-05">
+        <div class="col-5 padded-05">
             <div class="bg-featured padded-1 ">
-                <h4 class="featured-text">Apartamento 102</h4>
+                <h4 class="featured-text">Apartamento 102 / 202</h4>
                 <p>Para 6 personas</p>
                 <a href="/apartamento-102.html" class="link">Conocer</a>
 
             </div>
         </div>
-        <div class="col-4 padded-05">
+        <div class="col-5 padded-05">
             <div class="bg-featured padded-1">
                 <h4 class="featured-text">Apartamento 201</h4>
                 <p>Para 10 Personas</p>
                 <a href="/apartamento-202.html" class="link">Conocer</a>
 
-            </div>
-        </div>
-        <div class="col-4 padded-05">
-            <div class="bg-featured padded-1">
-                <h4 class="featured-text">Apartamento 202</h4>
-                <p>Para 6 Personas</p>
-                <a href="/apartamento-202.html" class="link">Conocer</a>
             </div>
         </div>
     </div>

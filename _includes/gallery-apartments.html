@@ -1,0 +1,9 @@
+<section class="padded padded-b-0">
+    <div class="slider-container-3">
+        {% for item in page.apartment-images %}
+            <div class="padded-1">
+                <div class="bg-image {{item.format}}" style="background-image: url('{{item.img_url}}');"></div>
+            </div> 
+        {% endfor %}
+    </div>
+</section>
