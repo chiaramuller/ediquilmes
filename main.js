@@ -1,4 +1,8 @@
-
+//Header nav --> mobile menu dropdown
+$(".dropdown-title-mob").click(function(){
+	$(".dropdown-content-mob").slideToggle();
+	$(".dropdown-content-mob").toggleClass("hidden");
+});
 
 //code for slick slider; testimonial section 
 $('.slider-container').slick({

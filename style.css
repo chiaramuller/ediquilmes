@@ -27,6 +27,7 @@ img { max-width: 100%; }
 
 html {
     scroll-behavior: smooth;
+    font-size: 1.1rem;
 }
 
 /* Utility Classes */
@@ -86,6 +87,7 @@ html {
     max-width: 1000px;
     margin: auto;
 }
+
 .capped-width-narrow{
     max-width: 900px;
     margin: auto;
@@ -262,15 +264,20 @@ header{
     top:0;
     right: 0;
     left: 0;
-    background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0));}
+
+header:hover{
+    background-image: none;
+    background-color: white;
 }
+
 .logo {
     font-size: 2rem;
 }
 .hamburger-button,
 .close-button{
     position: fixed;
-    right: 1%;
+    right: 2%;
     top: 2%;
     z-index: 2;
     max-width: 30px;
@@ -314,6 +321,55 @@ nav a{ padding: 0 2rem;}
 
 footer{
     background-color: var(--brand-1);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-title {
+    padding: 1rem 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    padding: 0.5rem;
+    display: none;
+    background-color: rgba(225,225,225,0.8);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    z-index: 2;
+    text-align: left;
+    width: 300px;
+}
+
+.mobile-menu a,
+.dropdown-title-mob{
+    text-decoration: none; 
+    width: max-content;
+    padding: 5%;
+    display: block;
+    min-width: 300px;
+/*     margin: auto;
+ */    width: 100%;
+}
+.dropdown-content-mob a{
+    padding: 2vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.dropdown-content a {
+    display: block;
+    min-width: 300px;
+    padding: 1rem 1%;
 }
 
 
@@ -462,5 +518,7 @@ iframe{width: 100%;}
 	/* - Styles added here will apply at devices smaller than 1024px */ 
     .tab-show{ display: block; }
     .tab-hide{ display: none;}
+
+    header{ padding: 2% 2%;}
 
 }
